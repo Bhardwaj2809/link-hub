@@ -4,82 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Professional Profile Hub</title>
-    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Load Lucide icons for aesthetic appeal --><script type="module">
+    <script type="module">
         import 'https://unpkg.com/lucide@latest';
     </script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0C1015; /* Outer background changed to match the card color */
+            background-color: #0C1015;
         }
         .link-button {
             transition: all 0.2s ease-in-out;
-            /* Added a subtle light shadow for better depth on dark mode */
-            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05); 
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
         }
         .link-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.1), 0 4px 6px -4px rgba(255, 255, 255, 0.05);
         }
-        /* Custom classes for the "Glow" effect - SUBTLY ADJUSTED */
         .text-glow-fuchsia {
-            /* Very subtle shadow matching fuchsia-400 */
-            text-shadow: 0 0 2px rgba(232, 121, 249, 0.7), 0 0 1px rgba(232, 121, 249, 0.5); 
+            text-shadow: 0 0 2px rgba(232, 121, 249, 0.7), 0 0 1px rgba(232, 121, 249, 0.5);
         }
         .text-glow-white {
-             /* Very subtle white shadow for general text contrast */
-            text-shadow: 0 0 1.5px rgba(255, 255, 255, 0.8), 0 0 0.5px rgba(255, 255, 255, 0.6); 
+            text-shadow: 0 0 1.5px rgba(255, 255, 255, 0.8), 0 0 0.5px rgba(255, 255, 255, 0.6);
         }
-        /* Custom box-shadow for blending/glowing border effect */
         .border-glow-fuchsia {
-            /* Shadow uses a subtle fuchsia color, spread wide to create a halo */
-            box-shadow: 0 0 15px rgba(232, 121, 249, 0.4), /* Inner glow */
-                        0 0 30px rgba(232, 121, 249, 0.15); /* Wider halo */
+            box-shadow: 0 0 15px rgba(232, 121, 249, 0.4),
+                        0 0 30px rgba(232, 121, 249, 0.15);
         }
     </style>
 </head>
 <body class="min-h-screen flex items-center justify-center p-4">
 
-    <!-- Main Container Card: Border changed to fuchsia-400 and new glow added --><div class="w-full max-w-md rounded-xl shadow-2xl p-8 md:p-10 border-2 border-fuchsia-400 border-glow-fuchsia" style="background-color: #0C1015;">
+    <div class="w-full max-w-md rounded-xl shadow-2xl p-8 md:p-10 border-2 border-fuchsia-400 border-glow-fuchsia" style="background-color: #0C1015;">
 
-        <!-- Header/Profile Section --><header class="text-center mb-10">
-            <!-- 
-            *** IMAGE IS NOW CORRECTLY FORMATTED ***
-            Border changed to fuchsia-400
-            --><img src="https://i.ibb.co/BVJ1jyqt/Whats-App-Image-2025-10-30-at-20-12-14-aa03ce8f.jpg" 
-                 alt="Profile Picture of Gunin Bhardwaj" 
+        <header class="text-center mb-10">
+            <img src="https://i.ibb.co/BVJ1jyqt/Whats-App-Image-2025-10-30-at-20-12-14-aa03ce8f.jpg"
+                 alt="Profile Picture of Gunin Bhardwaj"
                  class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-fuchsia-400 shadow-md"
-                 onerror="this.onerror=null; this.src='https://placehold.co/96x96/000000/FFFFFF?text=GB';" 
+                 onerror="this.onerror=null; this.src='https://placehold.co/96x96/000000/FFFFFF?text=GB';"
                  loading="lazy">
 
-            <!-- Name with white glow --><h1 class="text-3xl font-bold text-white text-glow-white" id="profile-name">Gunin Bhardwaj</h1>
-            <!-- Role/Skills text with fuchsia glow --><p class="text-fuchsia-400 font-medium mt-1 text-glow-fuchsia">B. Tech CSE (Core) @ VIT | AI/ML • Data Analyst • Generative AI • Financial Forecasting | Exploring DBMS And AWS</p>
+            <h1 class="text-3xl font-bold text-white text-glow-white" id="profile-name">Gunin Bhardwaj</h1>
+            <p class="text-fuchsia-400 font-medium mt-1 text-glow-fuchsia">B. Tech CSE (Core) @ VIT | AI/ML • Data Analyst • Generative AI • Financial Forecasting | Exploring DBMS And AWS</p>
             <p class="text-slate-300 text-sm mt-2"></p>
         </header>
 
-        <!-- Links Section --><main class="space-y-4">
+        <main class="space-y-4">
 
-            <!-- 1. Resume Link --><a href="https://drive.google.com/file/d/1VzK-ASK6vkBt4J5-JAwsNk24zMNI5f72/view?usp=sharing" target="_blank" id="resume-link" class="link-button flex items-center justify-between w-full p-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+            <a href="https://drive.google.com/file/d/10zmVdsALJOrdvC9mlA6AisZUugdrtp13/view?usp=sharing" class="link-button flex items-center justify-between w-full p-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
                 <div class="flex items-center">
-                    <i data-lucide="file-text" class="w-6 h-6 mr-3 text-fuchsia-300"></i> 
+                    <i data-lucide="file-text" class="w-6 h-6 mr-3 text-fuchsia-300"></i>
                     <span class="font-semibold text-xl text-glow-white">My Resume</span>
                 </div>
                 <i data-lucide="arrow-right" class="w-6 h-6"></i>
             </a>
 
-            <!-- 2. LinkedIn Link --><a href="https://www.linkedin.com/in/gunin-bhardwaj/" target="_blank" id="linkedin-link" class="link-button flex items-center justify-between w-full p-4 bg-blue-700 text-white rounded-lg hover:bg-blue-800">
+            <a href="https://www.linkedin.com/in/gunin-bhardwaj/" target="_blank" id="linkedin-link" class="link-button flex items-center justify-between w-full p-4 bg-blue-700 text-white rounded-lg hover:bg-blue-800">
                 <div class="flex items-center">
-                    <i data-lucide="linkedin" class="w-6 h-6 mr-3 text-fuchsia-300"></i> 
+                    <i data-lucide="linkedin" class="w-6 h-6 mr-3 text-fuchsia-300"></i>
                     <span class="font-semibold text-xl text-glow-white">LinkedIn Profile</span>
                 </div>
                 <i data-lucide="external-link" class="w-6 h-6"></i>
             </a>
 
-            <!-- 3. GitHub Link --><a href="https://github.com/Bhardwaj2809" target="_blank" id="github-link" class="link-button flex items-center justify-between w-full p-4 bg-gray-900 text-white rounded-lg hover:bg-gray-800">
+            <a href="https://github.com/Bhardwaj2809" target="_blank" id="github-link" class="link-button flex items-center justify-between w-full p-4 bg-gray-900 text-white rounded-lg hover:bg-gray-800">
                 <div class="flex items-center">
-                    <i data-lucide="github" class="w-6 h-6 mr-3 text-fuchsia-300"></i> 
+                    <i data-lucide="github" class="w-6 h-6 mr-3 text-fuchsia-300"></i>
                     <span class="font-semibold text-xl text-glow-white">GitHub Portfolio</span>
                 </div>
                 <i data-lucide="code" class="w-6 h-6"></i>
@@ -87,8 +78,8 @@
 
         </main>
 
-        <!-- Footer --><footer class="text-center mt-10 text-slate-400 text-xs">
-            
+        <footer class="text-center mt-10 text-slate-400 text-xs">
+
         </footer>
 
     </div>
